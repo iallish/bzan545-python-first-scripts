@@ -72,9 +72,7 @@ slices_per_person = 5
 n_pizzas = 6
 slices_per_pizza = 8
 
-# ?????
-# ?????
-# ?????
+remaining_slices = (n_pizzas*slices_per_pizza - n_people*slices_per_person)
 
 print(remaining_slices)
 

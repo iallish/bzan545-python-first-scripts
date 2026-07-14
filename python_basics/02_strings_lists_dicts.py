@@ -58,6 +58,8 @@ print(products)
 #
 # Type a few indexing/slicing examples here:
 
+products[0:4:2]
+
 # What do you think products[1:3] will return?
 
 # What do you think products[:2] will return?
@@ -70,13 +72,18 @@ print(products)
 # * + can combine lists into a new list
 # * assigning by index replaces an item
 
-# Try adding one product:
+# Try adding one products.append("")
+products.append("bottle")
+
 
 # Try adding several products:
 
 # Try combining two lists:
 apparel = ["hoodie", "cap"]
 home = ["mug", "blanket"]
+
+new_list = apparel + home
+
 
 # Try replacing one item in products:
 
@@ -112,7 +119,7 @@ destination = "atl"
 ship_date = "2026-07-14"
 
 # Type an f-string example here:
-
+(f"The package is coming from {origin} and going to {destination} on {ship_date}")
 
 # A dictionary stores key-value pairs.
 # You look values up by key.
@@ -130,12 +137,16 @@ student = {
 # Type a few dictionary examples here:
 
 # Pull the student's name:
+student["name"]
 
 # Pull the student's grades:
+student["grades"]
 
 # Pull the student's first grade:
+student["grades"][0]
 
 # Pull the student's last grade:
+student["grades"][-1]
 
 # Calculate the student's average grade:
 
