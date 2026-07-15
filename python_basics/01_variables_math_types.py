@@ -37,8 +37,10 @@ print(cost)
 # Type a few calculator examples here:
 
 # What's a case where you might want to use //?
+33 // 4
 
 # What's a case where you might want to use %?
+33 % 4
 
 # Types are the kind of value something is.
 # Common first data types:

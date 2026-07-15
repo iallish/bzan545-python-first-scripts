@@ -29,13 +29,13 @@ print(sentence)
 # * .strip()
 #
 # Type a few string method examples here:
-
+name.upper()
 # What's a case where you might want .lower() or .upper()?
 
 # What's a case where you might want .strip()?
-
+sentence.strip()
 # What's a case where you might want .split()?
-
+sentence.split()
 # A list is an ordered collection of values.
 products = ["hoodie", "cap", "mug", "sticker"]
 print(products)
@@ -61,11 +61,11 @@ print(products)
 products[0:4:2]
 
 # What do you think products[1:3] will return?
-
+products[1:3]
 # What do you think products[:2] will return?
-
+products[:2]
 # What do you think products[::2] will return?
-
+products[::2]
 # Lists can change.
 # * .append() adds one item
 # * .extend() adds several items
@@ -74,7 +74,7 @@ products[0:4:2]
 
 # Try adding one products.append("")
 products.append("bottle")
-
+products.extend(["bottle","pants"])
 
 # Try adding several products:
 
@@ -154,14 +154,18 @@ student["grades"][-1]
 # * .keys()
 # * .values()
 # * .items()
-
+student.keys()
+student.values()
+student.items()
 # Dictionaries can change.
 # * assigning to a new key adds a key-value pair
 # * assigning to an existing key replaces that value
 
 # Try adding a major:
+student["major"] = "MSBA"
 
 # Try changing the student's age:
+student["age"] = 26
 
 # Do dictionaries have the same two-names-one-object behavior as lists?
 student_a = {
@@ -193,7 +197,7 @@ order = {
 }
 
 # Calculate order_total using the order dictionary:
-
+order_total = order["quantity"] * order["unit_price"]
 
 # Practice prompts
 #
